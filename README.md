@@ -1,7 +1,10 @@
 # Hawetec
+Uma página web para reunir e hospedar os projetos, disponível em [hawetec.com.br](https://hawetec.com.br).  
+Em colaboração com Danilo Hawerroth  
+
 A web page to gather and host the projects, available at [hawetec.com.br](https://hawetec.com.br).  
 In collaboration with Danilo Hawerroth  
-
+  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
 ## Development server
