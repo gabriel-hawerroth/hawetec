@@ -1,4 +1,6 @@
 # Hawetec
+A web page to gather and host the projects, available at [hawetec.com.br](https://hawetec.com.br).  
+In collaboration with Danilo Hawerroth  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
