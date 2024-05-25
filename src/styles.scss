@@ -2,15 +2,22 @@
 
 @include mat.core();
 
-$hawetec-primary: mat.define-palette(mat.$orange-palette, 500);
-$hawetec-accent: mat.define-palette(mat.$blue-gray-palette, 200);
-$hawetec-warn: mat.define-palette(mat.$red-palette, A700);
+$theme: mat.define-theme(( //
+            color: ( //
+                theme-type: light,
+                primary: mat.$orange-palette,
+            ),
+            typography: ( //
+                brand-family: 'system-ui',
+                bold-weight: 900,
+            ),
+            density: (scale: -1),
+        ));
 
-$hawetec-theme: mat.define-light-theme((color: (primary: $hawetec-primary,
-                accent: $hawetec-accent,
-                warn: $hawetec-warn, )));
-
-@include mat.all-component-themes($hawetec-theme);
+html {
+    @include mat.core-theme($theme);
+    @include mat.all-component-themes($theme);
+}
 
 * {
     margin: 0;
@@ -24,7 +31,7 @@ app-root {
     width: 100%;
     height: 100%;
     color: rgb(244, 244, 244);
-    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    font-family: system-ui, -apple-system, sans-serif;
     background-color: #0f0f0f;
 }
 

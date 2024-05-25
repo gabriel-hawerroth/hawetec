@@ -1,91 +1,35 @@
-@media screen and (min-width: 1500px) and (min-height: 800px) {
-    .content {
-        overflow: hidden;
-    }
-}
+@media screen and (max-width: 1300px) {
+    .simple-page {
+        overflow-y: scroll !important;
 
-@media screen and (max-width: 1280px) and (max-height: 720px) {
-    .content {
-        .left {
-            gap: 4rem !important;
+        .body {
+            .content {
+                flex-direction: column !important;
 
-            .card {
-                width: 19rem !important;
-                transform: scale(0.9);
+                #profile-cards {
+                    width: 100% !important;
+                }
 
-                .img {
-                    height: 15rem !important;
+                #project-buttons {
+                    width: 100%;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 1100px) {
-    .content {
-        flex-direction: column;
-        padding-bottom: 2rem;
+@media screen and (max-width: 900px) {
+    .simple-page {
 
-        .left {
-            width: 100% !important;
-            padding-top: 4rem !important;
-        }
-    }
-}
-
-@media screen and (max-width: 950px) {
-    .about {
-        text-align: center;
-        font-size: .9rem !important;
-        padding: 0 2rem !important;
-    }
-
-    .content {
-        .left {
-            flex-direction: column-reverse !important;
-            align-items: center !important;
-            padding-top: 0 !important;
-            gap: 0 !important;
-
-            .card {
-                width: 22rem !important;
-                transform: scale(0.8) !important;
-
-                .img {
-                    height: 11rem !important;
-                }
-
-                .gh {
-                    background-image: url(../../../../assets/gh-avatarMob.webp) !important;
-                    background-position-y: -140px !important;
-                }
-
-                .name {
-                    padding: 1rem 0 !important;
-                }
-
-                .contact {
-                    padding: .4rem 0 1.3rem 1.2rem !important;
-                    gap: 1.4rem !important;
-                }
-
-                &:first-child {
-                    position: relative !important;
-                    bottom: 1.5rem !important;
-                }
+        .body {
+            .about {
+                width: 90% !important;
+                font-size: 1rem !important;
             }
-        }
 
-        .right {
-            margin-top: 0 !important;
-
-            .row {
-                margin-top: 2rem !important;
-                gap: 2rem !important;
-
-                button {
-                    width: 9rem !important;
-                    padding: .4rem 0 !important;
+            .content {
+                #project-buttons {
+                    width: 100vw !important;
                 }
             }
         }
@@ -98,117 +42,39 @@
     display: flex;
     flex-direction: column;
     background-color: #0f0f0f;
+    overflow-y: hidden;
 
-    .about {
-        width: 100%;
+    .body {
+        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        font-size: 1.2rem;
-        padding: 1rem 0;
-    }
 
-    .content {
-        display: flex;
-        flex: 1;
-
-        .left {
-            width: 55%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 8rem;
-            padding-top: 3%;
-
-            .card {
-                width: 21rem;
-                height: fit-content;
-                border-radius: 12px;
-                background-color: #202020;
-
-                .img {
-                    height: 18rem;
-                    background-size: cover;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;
-                }
-
-                .gh {
-                    background-image: url(../../../../assets/gh-avatarPc.webp);
-                    background-position-y: -30px;
-                }
-
-                .dh {
-                    background-image: url(../../../../assets/dh-avatar.webp);
-                }
-
-                .name {
-                    width: 100%;
-                    font-size: 1.3rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                    padding: 1.3rem 0;
-                }
-
-                .contact {
-                    width: 100%;
-                    display: flex;
-                    justify-content: start;
-                    align-items: center;
-                    padding: .8rem 0 2rem 1.5rem;
-                    gap: 1.4rem;
-
-                    .whats {
-                        background-image: url(../../../../assets/whatsapp.webp);
-                    }
-
-                    .email {
-                        background-image: url(../../../../assets/gmail.png);
-                    }
-
-                    .linkedin {
-                        background-image: url(../../../../assets/linked-in.webp);
-                    }
-
-                    .github {
-                        background-image: url(../../../../assets/github.webp);
-                        background-color: white;
-                    }
-
-                    .button {
-                        padding: 1.5rem;
-                        border-radius: 50%;
-                        box-shadow: 0 0 3px #525252;
-                        background-size: cover;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-
-        .right {
-            flex: 1;
-            height: 100%;
+        .about {
+            width: 100%;
             display: flex;
             flex-direction: column;
-            background-color: #0f0f0f;
-            margin-top: 1rem;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
 
-            .row {
-                width: 100%;
-                margin-top: 2.7em;
-                display: flex;
-                justify-content: center;
-                gap: 20%;
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex: 1;
 
-                button {
-                    box-sizing: initial;
-                    width: 11rem;
-                    padding: .7rem 0;
-                    border-color: #c49b1f;
-                }
+            #profile-cards {
+                width: 55%;
+                height: 100%;
+            }
+
+            #project-buttons {
+                flex: 1;
+                height: 100%;
             }
         }
     }

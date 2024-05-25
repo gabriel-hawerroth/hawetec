@@ -1,0 +1,48 @@
+@media screen and (max-width: 1300px) {
+    .project-buttons-container {
+        gap: 2.5rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .project-buttons-container {
+
+        .row {
+            justify-content: space-around !important;
+
+            button {
+                width: 10rem !important;
+            }
+        }
+    }
+}
+
+.project-buttons-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .mat-mdc-outlined-button {
+            border-radius: 3px !important;
+        }
+
+        button {
+            box-sizing: initial;
+            width: 11rem;
+            padding: .7rem 0;
+            border-color: #c09000;
+            color: #ff9800;
+            font-size: .95rem;
+            letter-spacing: 1px;
+        }
+    }
+}

@@ -1,164 +1,22 @@
 <div class="simple-page">
   <app-header></app-header>
 
-  <div class="about">
-    <span>
-      Bem vindo ao nosso espaço digital. Explore nossas criações, inspire-se e
-      compartilhe dessa paixão conosco!
-    </span>
+  <div class="body">
+    <div class="about">
+      <span>
+        Bem vindo ao nosso espaço digital. Explore nossas criações, inspire-se e
+        compartilhe dessa paixão conosco!
+      </span>
 
-    <span>
-      Abaixo você encontrará nossos contatos e os links dos nossos projetos
-    </span>
-  </div>
-
-  <div class="content">
-    <div class="left">
-      <div class="card">
-        <div class="img gh" alt="Gabriel Hawerroth profile image"></div>
-
-        <div class="name">Gabriel Hawerroth</div>
-
-        <div class="contact">
-          <a
-            href="https://wa.me/5547996609550"
-            target="_blank"
-            aria-label="Gabriel Hawerroth whatsapp"
-          >
-            <div class="button whats"></div>
-          </a>
-          <a
-            href="mailto:gabrielhawerroth04@gmail.com"
-            target="_blank"
-            aria-label="Gabriel Hawerroth mail"
-          >
-            <div class="button email"></div>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/gabriel-hawerroth/"
-            target="_blank"
-            aria-label="Gabriel Hawerroth linkedin"
-          >
-            <div class="button linkedin"></div>
-          </a>
-          <a
-            href="https://github.com/gabriel-hawerroth"
-            target="_blank"
-            aria-label="Gabriel Hawerroth github"
-          >
-            <div class="button github"></div>
-          </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="img dh" alt="Danilo Hawerroth profile image"></div>
-
-        <div class="name">Danilo Hawerroth</div>
-
-        <div class="contact">
-          <a
-            href="https://wa.me/5547996140788"
-            target="_blank"
-            aria-label="Danilo Hawerroth whatsapp"
-          >
-            <div class="button whats"></div>
-          </a>
-          <a
-            href="mailto:dhawerroth@gmail.com"
-            target="_blank"
-            aria-label="Danilo Hawerroth mail"
-          >
-            <div class="button email"></div>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/danilo-hawerroth-7063b635/"
-            target="_blank"
-            aria-label="Danilo Hawerroth linkedin"
-          >
-            <div class="button linkedin"></div>
-          </a>
-        </div>
-      </div>
+      <span>
+        Abaixo você encontrará nossos contatos e os links dos nossos projetos
+      </span>
     </div>
 
-    <div class="right">
-      <div class="row">
-        <a
-          href="https://hawetec.com.br/finax/"
-          aria-label="Finax - financial web system"
-        >
-          <button mat-stroked-button color="primary">Finax</button>
-        </a>
+    <div class="content">
+      <app-profile-cards id="profile-cards"></app-profile-cards>
 
-        <a href="http://hawetec.com.br/mario/" aria-label="Mario game">
-          <button mat-stroked-button color="primary">Mário</button>
-        </a>
-      </div>
-
-      <div class="row">
-        <a
-          href="https://hawetec.com.br/healthcare/"
-          aria-label="HealthCare - health web system"
-        >
-          <button mat-stroked-button color="primary">HealthCare</button>
-        </a>
-
-        <a
-          href="https://hawetec.com.br/mata-mosquito/"
-          aria-label="Mata mosquito game"
-        >
-          <button mat-stroked-button color="primary">Mata mosquito</button>
-        </a>
-      </div>
-
-      <div class="row">
-        <a
-          href="https://hawetec.com.br/cata-vento/"
-          aria-label="Cata vento project"
-        >
-          <button mat-stroked-button color="primary">Cata Vento</button>
-        </a>
-
-        <a
-          href="https://hawetec.com.br/horacerta/"
-          aria-label="Hora certa project"
-        >
-          <button mat-stroked-button color="primary">Hora Certa</button>
-        </a>
-      </div>
-
-      <div class="row">
-        <a
-          href="https://hawetec.com.br/sistema-solar/"
-          aria-label="Sistema solar project"
-        >
-          <button mat-stroked-button color="primary">Sistema solar</button>
-        </a>
-
-        <a href="https://hawetec.com.br/weather/" aria-label="Weather project">
-          <button mat-stroked-button color="primary">Weather</button>
-        </a>
-      </div>
-
-      <div class="row">
-        <a
-          href="https://hawetec.com.br/sorteitor/"
-          aria-label="Sorteitor project"
-        >
-          <button mat-stroked-button color="primary">Sorteitor</button>
-        </a>
-
-        <a href="https://hawetec.com.br/ilusao/" aria-label="Ilusao project">
-          <button mat-stroked-button color="primary">Ilusão</button>
-        </a>
-      </div>
-
-      <div class="row">
-        <a href="https://hawetec.com.br/magica/" aria-label="Magic project">
-          <button mat-stroked-button color="primary">Mágica</button>
-        </a>
-      </div>
+      <app-project-buttons id="project-buttons"></app-project-buttons>
     </div>
   </div>
 </div>
