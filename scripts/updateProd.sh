@@ -12,16 +12,16 @@ if [ $? -ne 0 ]; then
 fi
 
 # Deleta o processo existente do PM2 no servidor remoto
-ssh ubuntu@168.138.150.229 "pm2 delete ssr.hawetec"
+ssh ubuntu@hawetec "pm2 delete ssr.hawetec"
 
 # Remove os arquivos antigos no servidor remoto
-ssh ubuntu@168.138.150.229 "rm -rf /home/ubuntu/prd_projects/front/prerendered-routes.json"
-ssh ubuntu@168.138.150.229 "rm -rf /home/ubuntu/prd_projects/front/3rdpartylicenses.txt"
-ssh ubuntu@168.138.150.229 "rm -rf /home/ubuntu/prd_projects/front/server/"
-ssh ubuntu@168.138.150.229 "rm -rf /home/ubuntu/prd_projects/front/browser/"
+ssh ubuntu@hawetec "rm -rf /home/ubuntu/prd_projects/front/prerendered-routes.json"
+ssh ubuntu@hawetec "rm -rf /home/ubuntu/prd_projects/front/3rdpartylicenses.txt"
+ssh ubuntu@hawetec "rm -rf /home/ubuntu/prd_projects/front/server/"
+ssh ubuntu@hawetec "rm -rf /home/ubuntu/prd_projects/front/browser/"
 
 # Copia os novos arquivos para o servidor remoto
-scp -r dist/hawetec/* ubuntu@168.138.150.229:/home/ubuntu/prd_projects/front/
+scp -r dist/hawetec/* ubuntu@hawetec:/home/ubuntu/prd_projects/front/
 
 # Inicia o processo no servidor remoto
-ssh ubuntu@168.138.150.229 "/home/ubuntu/start_scripts/start_hawetec.sh"
+ssh ubuntu@hawetec "/home/ubuntu/start_scripts/start_hawetec.sh"
