@@ -1,5 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { cloudFrontUrl } from '../../../../../../shared/constants';
 
 @Component({
   selector: 'app-profile-cards',
@@ -9,5 +10,5 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProfileCardsComponent {
-  cloudFrontUrl = 'https://ddmv7vg76tda1.cloudfront.net';
+  cloudFrontUrl = cloudFrontUrl;
 }
