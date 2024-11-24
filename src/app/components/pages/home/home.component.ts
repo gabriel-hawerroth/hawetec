@@ -5,7 +5,6 @@ import { ProjectButtonsComponent } from './components/project-buttons/project-bu
 
 @Component({
   selector: 'app-home',
-  standalone: true,
   imports: [HeaderComponent, ProfileCardsComponent, ProjectButtonsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
