@@ -100,29 +100,16 @@
             padding: .8rem 0 2rem 1.5rem;
             gap: 1.4rem;
 
-            .whats {
-                background-image: url('https://ddmv7vg76tda1.cloudfront.net/hawetec/whatsapp.webp');
-            }
-
-            .email {
-                background-image: url('https://ddmv7vg76tda1.cloudfront.net/hawetec/gmail.png');
-            }
-
-            .linkedin {
-                background-image: url('https://ddmv7vg76tda1.cloudfront.net/hawetec/linked-in.webp');
-            }
-
-            .github {
-                background-image: url('https://ddmv7vg76tda1.cloudfront.net/hawetec/github.webp');
-                background-color: white;
-            }
-
             .button {
                 padding: 1.5rem;
                 border-radius: 50%;
                 box-shadow: 0 0 3px #525252;
-                background-size: cover;
+                position: relative;
                 cursor: pointer;
+
+                img {
+                    border-radius: 50%;
+                }
             }
         }
     }
