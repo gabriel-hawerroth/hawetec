@@ -3,6 +3,7 @@
     "short_name": "Hawetec",
     "description": "Aplicação PWA para gerenciar serviços da Hawetec.",
     "start_url": "/",
+    "scope": "/",
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#d49800e9",
@@ -10,6 +11,16 @@
         {
             "src": "https://ddmv7vg76tda1.cloudfront.net/hawetec/hawetec-logo.webp",
             "sizes": "50x50",
+            "type": "image/webp"
+        },
+        {
+            "src": "https://ddmv7vg76tda1.cloudfront.net/hawetec/H-192x192.webp",
+            "sizes": "192x192",
+            "type": "image/webp"
+        },
+        {
+            "src": "https://ddmv7vg76tda1.cloudfront.net/hawetec/H-512x512.webp",
+            "sizes": "512x512",
             "type": "image/webp"
         }
     ]
