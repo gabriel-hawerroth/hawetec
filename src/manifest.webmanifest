@@ -1,5 +1,5 @@
 {
-    "name": "Hawetec App",
+    "name": "Hawetec",
     "short_name": "Hawetec",
     "description": "Aplicação PWA para gerenciar serviços da Hawetec.",
     "start_url": "/",
