@@ -2,9 +2,9 @@
     "name": "Hawetec App",
     "short_name": "Hawetec",
     "description": "Aplicação PWA para gerenciar serviços da Hawetec.",
-    "start_url": "/index.html",
+    "start_url": "/",
     "display": "standalone",
-    "background_color": "#000",
+    "background_color": "#000000",
     "theme_color": "#d49800e9",
     "icons": [
         {
