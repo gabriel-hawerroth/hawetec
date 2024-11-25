@@ -1,3 +1,18 @@
+@media screen and (max-width: 1400px) {
+    .simple-page {
+        .body {
+            .about {
+                flex-direction: column-reverse !important;
+
+                .add-home-screen {
+                    position: inherit !important;
+                    left: 1.5rem !important;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .simple-page {
         overflow-y: scroll !important;
@@ -20,7 +35,6 @@
 
 @media screen and (max-width: 900px) {
     .simple-page {
-
         .body {
             .about {
                 width: 90% !important;
@@ -51,14 +65,38 @@
         align-items: center;
 
         .about {
-            width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            font-size: 1.2rem;
-            margin-top: 2rem;
-            text-align: center;
+
+            .add-home-screen {
+                position: absolute;
+                left: 5rem;
+
+                button {
+                    position: relative;
+                    top: 1.5rem;
+                    border-radius: 3px !important;
+                    box-sizing: initial;
+                    width: 14rem;
+                    padding: .7rem 0;
+                    border-color: #c09000;
+                    color: #ff9800;
+                    font-size: .95rem;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                margin-top: 2rem;
+                text-align: center;
+            }
         }
 
         .content {

@@ -3,14 +3,24 @@
 
   <div class="body">
     <div class="about">
-      <span>
-        Bem vindo ao nosso espaço digital. Explore nossas criações, inspire-se e
-        compartilhe dessa paixão conosco!
-      </span>
+      @if (showButton()) {
+      <div class="add-home-screen">
+        <button mat-stroked-button (click)="addToHomeScreen()">
+          Adicionar à tela inicial
+        </button>
+      </div>
+      }
 
-      <span>
-        Abaixo você encontrará nossos contatos e os links dos nossos projetos
-      </span>
+      <div class="text">
+        <span>
+          Bem vindo ao nosso espaço digital. Explore nossas criações, inspire-se
+          e compartilhe dessa paixão conosco!
+        </span>
+
+        <span>
+          Abaixo você encontrará nossos contatos e os links dos nossos projetos
+        </span>
+      </div>
     </div>
 
     <div class="content">
