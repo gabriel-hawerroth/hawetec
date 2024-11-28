@@ -50,7 +50,8 @@
             "assets": [
               "src/assets",
               "src/robots.txt",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              "src/.well-known"
             ],
             "styles": [
               "src/styles.scss"
