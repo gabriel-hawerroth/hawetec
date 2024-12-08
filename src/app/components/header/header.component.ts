@@ -28,11 +28,16 @@ export class HeaderComponent {
   private readonly themingService = inject(ThemingService);
   private readonly _utils = inject(UtilsService);
 
-  darkThemeEnabled =
-    this._utils.getItemLocalStorage(LS_DARK_THEME_ENABLED) === 'true';
+  darkThemeEnabled = Boolean(
+    this._utils.getItemLocalStorage(LS_DARK_THEME_ENABLED)
+  );
   theme = signal(this.darkThemeEnabled ? 'dark' : 'light');
 
   constructor() {
+    const savedTheme = this._utils.getItemLocalStorage(LS_DARK_THEME_ENABLED);
+    if (savedTheme) this.darkThemeEnabled = Boolean(savedTheme);
+    else this.darkThemeEnabled = true;
+
     this.onChangeTheme({
       checked: this.darkThemeEnabled,
       source: new MatSlideToggle(),
