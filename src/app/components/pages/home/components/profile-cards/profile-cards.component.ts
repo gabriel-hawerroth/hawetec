@@ -1,10 +1,11 @@
 import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { cloudFrontUrl } from '../../../../../../shared/constants';
+import { MatCardModule } from '@angular/material/card';
+import { cloudFrontUrl } from '../../../../../shared/constants';
 
 @Component({
   selector: 'app-profile-cards',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, MatCardModule],
   templateUrl: './profile-cards.component.html',
   styleUrl: './profile-cards.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

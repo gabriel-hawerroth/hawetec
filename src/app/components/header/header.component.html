@@ -6,4 +6,14 @@
     alt="Hawetec logo"
   />
   <span>AWETEC</span>
+
+  <mat-slide-toggle
+    id="theme-toggle"
+    [(ngModel)]="darkThemeEnabled"
+    (change)="onChangeTheme($event)"
+  >
+    <span class="material-symbols-outlined">
+      {{ theme() + "_mode" }}
+    </span>
+  </mat-slide-toggle>
 </div>

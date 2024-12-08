@@ -31,16 +31,14 @@
         display: flex;
         justify-content: space-evenly;
 
-        .mat-mdc-outlined-button {
-            border-radius: 3px !important;
-        }
+        // .mat-mdc-outlined-button {
+        //     border-radius: 3px !important;
+        // }
 
         button {
             box-sizing: initial;
             width: 11rem;
             padding: .7rem 0;
-            border-color: #c09000;
-            color: #ff9800;
             font-size: .95rem;
             letter-spacing: 1px;
         }

@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    box-shadow: 0 0 15px #ffffff70;
+    box-shadow: 0 0 10px var(--primary-dark);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,4 +8,10 @@
     gap: 5px;
     font-family: Cambria, serif;
     padding: 1.8rem 0;
+
+    #theme-toggle {
+        position: absolute;
+        top: 1rem;
+        right: 2.5rem;
+    }
 }
