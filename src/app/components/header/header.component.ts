@@ -4,6 +4,7 @@ import {
   Component,
   inject,
   signal,
+  WritableSignal,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {
@@ -28,15 +29,17 @@ export class HeaderComponent {
   private readonly themingService = inject(ThemingService);
   private readonly _utils = inject(UtilsService);
 
-  darkThemeEnabled = Boolean(
-    this._utils.getItemLocalStorage(LS_DARK_THEME_ENABLED)
-  );
-  theme = signal(this.darkThemeEnabled ? 'dark' : 'light');
+  darkThemeEnabled: boolean;
+  theme: WritableSignal<'dark' | 'light'>;
 
   constructor() {
     const savedTheme = this._utils.getItemLocalStorage(LS_DARK_THEME_ENABLED);
-    if (savedTheme) this.darkThemeEnabled = Boolean(savedTheme);
+
+    if (savedTheme !== undefined && savedTheme !== null && savedTheme !== '')
+      this.darkThemeEnabled = savedTheme === 'true';
     else this.darkThemeEnabled = true;
+
+    this.theme = signal(this.darkThemeEnabled ? 'dark' : 'light');
 
     this.onChangeTheme({
       checked: this.darkThemeEnabled,
