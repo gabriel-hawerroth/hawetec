@@ -37,9 +37,9 @@ export class ThemingService {
       },
       {
         name: 'light',
-        primary: '#FF8C00',
-        primaryLight: '#ffb624',
-        primaryDark: '#b9b9b9',
+        primary: '#ff8800',
+        primaryLight: '#ffa618',
+        primaryDark: '#c9c9c9',
         background: '#ededed',
         ripple: '#FF8C001E',
         error: '#FF4500',
