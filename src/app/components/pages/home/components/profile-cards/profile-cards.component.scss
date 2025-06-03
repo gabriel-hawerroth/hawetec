@@ -1,109 +1,109 @@
-@import 'shared-styles.scss';
+@use "shared-styles.scss" as *;
 
 @media screen and (max-width: 1600px) {
-    .profile-cards-container {
-        .card {
-            width: 19rem !important;
+  .profile-cards-container {
+    .card {
+      width: 19rem !important;
 
-            .img {
-                height: 16rem !important;
-            }
+      .img {
+        height: 16rem !important;
+      }
 
-            .name {
-                padding: .9rem 0 !important;
-            }
+      .name {
+        padding: 0.9rem 0 !important;
+      }
 
-            .contact {
-                padding: .6rem 0 1.8rem 1.5rem !important;
-            }
-        }
+      .contact {
+        padding: 0.6rem 0 1.8rem 1.5rem !important;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 1300px) {
-    .profile-cards-container {
-        padding: 4rem 0 !important;
-    }
+  .profile-cards-container {
+    padding: 4rem 0 !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .profile-cards-container {
-        flex-direction: column-reverse !important;
-        gap: 3rem !important;
+  .profile-cards-container {
+    flex-direction: column-reverse !important;
+    gap: 3rem !important;
 
-        .card {
-            width: 82% !important;
+    .card {
+      width: 82% !important;
 
-            .img {
-                height: 12rem !important;
-            }
+      .img {
+        height: 12rem !important;
+      }
 
-            .gh {
-                background-image: url('https://ddmv7vg76tda1.cloudfront.net/hawetec/gh-avatarMob.webp') !important;
-                background-position-y: -140px !important;
-            }
+      .gh {
+        background-image: url("https://ddmv7vg76tda1.cloudfront.net/hawetec/gh-avatarMob.webp") !important;
+        background-position-y: -140px !important;
+      }
 
-            .name {
-                padding: .8rem 0 !important;
-            }
+      .name {
+        padding: 0.8rem 0 !important;
+      }
 
-            .contact {
-                padding: .5rem 0 1.6rem 1.5rem !important;
-            }
-        }
+      .contact {
+        padding: 0.5rem 0 1.6rem 1.5rem !important;
+      }
     }
+  }
 }
 
 .profile-cards-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 10%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10%;
 
-    .card {
-        width: 21.5rem;
-        height: fit-content;
-        border-radius: $border-radius;
+  .card {
+    width: 21.5rem;
+    height: fit-content;
+    border-radius: $border-radius;
 
-        .img {
-            height: 18rem;
-            background-size: cover;
-            border-top-left-radius: $border-radius;
-            border-top-right-radius: $border-radius;
-        }
-
-        .gh {
-            background-image: url('https://ddmv7vg76tda1.cloudfront.net/hawetec/gh-avatarPc.webp');
-            background-position-y: -30px;
-        }
-
-        .dh {
-            background-image: url('https://ddmv7vg76tda1.cloudfront.net/hawetec/dh-avatar.webp');
-        }
-
-        .name {
-            width: 100%;
-            font-size: 1.3rem;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            padding: 1.1rem 0;
-        }
-
-        .contact {
-            width: 100%;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            padding: .8rem 0 2rem 1.5rem;
-            gap: 1.4rem;
-
-            img {
-                border-radius: 50%;
-            }
-        }
+    .img {
+      height: 18rem;
+      background-size: cover;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
     }
+
+    .gh {
+      background-image: url("https://ddmv7vg76tda1.cloudfront.net/hawetec/gh-avatarPc.webp");
+      background-position-y: -30px;
+    }
+
+    .dh {
+      background-image: url("https://ddmv7vg76tda1.cloudfront.net/hawetec/dh-avatar.webp");
+    }
+
+    .name {
+      width: 100%;
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 1.1rem 0;
+    }
+
+    .contact {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 0.8rem 0 2rem 1.5rem;
+      gap: 1.4rem;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
 }
