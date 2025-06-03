@@ -1,4 +1,4 @@
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -18,7 +18,7 @@ import { cloudFrontUrl, LS_DARK_THEME_ENABLED } from '../../shared/constants';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, FormsModule, NgOptimizedImage, MatSlideToggleModule],
+  imports: [FormsModule, NgOptimizedImage, MatSlideToggleModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
