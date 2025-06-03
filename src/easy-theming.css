@@ -4,13 +4,13 @@ body {
   --mat-toolbar-container-text-color: var(--primary-light);
 
   /* Buttons  */
-  --mdc-protected-button-label-text-color: var(--primary);
+  --mat-button-protected-label-text-color: var(--primary);
   --mat-protected-button-state-layer-color: var(--primary);
   --mdc-text-button-label-text-color: var(--primary);
   --mdc-filled-button-container-color: var(--primary);
   --mdc-outlined-button-label-text-color: var(--primary);
-  --mat-text-button-state-layer-color: var(--primary);
-  --mat-outlined-button-state-layer-color: var(--primary);
+  --mat-button-text-state-layer-color: var(--primary);
+  --mat-button-outlined-state-layer-color: var(--primary);
   --mdc-protected-button-container-color: var(--background);
   --mdc-filled-button-label-text-color: var(--primary-light);
   --mdc-outlined-button-outline-color: var(--primary-dark);
@@ -30,9 +30,9 @@ body {
   --mat-fab-state-layer-color: var(--primary-dark);
   --mat-text-button-disabled-state-layer-color: var(--primary-dark);
   --mat-protected-button-disabled-state-layer-color: var(--primary-dark);
-  --mat-filled-button-disabled-state-layer-color: var(--primary-dark);
+  --mat-button-filled-disabled-state-layer-color: var(--primary-dark);
   --mat-icon-button-disabled-state-layer-color: var(--primary-dark);
-  --mat-standard-button-toggle-divider-color: var(--primary-dark);
+  --mat-button-toggle-divider-color: var(--primary-dark);
   --mat-standard-button-toggle-selected-state-text-color: var(--primary-dark);
   --mat-standard-button-toggle-text-color: var(--primary-dark);
   --mat-standard-button-toggle-state-layer-color: var(--primary-dark);
@@ -50,8 +50,8 @@ body {
   --mdc-checkbox-selected-focus-state-layer-color: var(--primary);
   --mdc-checkbox-selected-hover-state-layer-color: var(--primary);
   --mdc-checkbox-unselected-pressed-state-layer-color: var(--primary);
-  --mat-full-pseudo-checkbox-selected-icon-color: var(--primary);
-  --mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--primary);
+  --mat-pseudo-checkbox-full-selected-icon-color: var(--primary);
+  --mat-pseudo-checkbox-minimal-selected-checkmark-color: var(--primary);
   --mdc-checkbox-selected-checkmark-color: var(--primary-light);
   --mdc-checkbox-unselected-focus-icon-color: var(--primary-dark);
   --mdc-checkbox-unselected-hover-icon-color: var(--primary-dark);
@@ -141,7 +141,7 @@ body {
   --mdc-switch-selected-track-color: var(--primary);
   --mdc-switch-unselected-pressed-track-color: var(--primary-light);
   --mdc-switch-unselected-track-color: var(--primary-light);
-  --mat-switch-track-outline-color: var(--primary-dark);
+  --mat-slide-toggle-track-outline-color: var(--primary-dark);
   --mdc-switch-unselected-hover-track-color: var(--primary-light);
   --mdc-switch-unselected-icon-color: var(--primary-light);
   --mdc-switch-unselected-pressed-handle-color: var(--primary-dark);
@@ -242,7 +242,7 @@ body {
 
   /*Tabs */
   --mdc-tab-indicator-active-indicator-color: var(--primary);
-  --mat-tab-header-active-focus-indicator-color: var(--primary);
+  --mat-tab-active-focus-indicator-color: var(--primary);
   --mat-tab-header-active-hover-indicator-color: var(--primary);
   --mat-tab-header-pagination-icon-color: var(--primary-dark);
   --mat-tab-header-inactive-label-text-color: var(--primary-dark);

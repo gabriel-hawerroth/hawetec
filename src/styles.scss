@@ -1,12 +1,14 @@
 @use '@angular/material' as mat;
 
-@include mat.core();
+@include mat.elevation-classes();
+@include mat.app-background();
 
 @import "./../m3-theme.scss";
 @import 'shared-styles.scss';
 
 :root {
-    @include mat.core-theme($light-theme);
+    @include mat.elevation-classes();
+    @include mat.app-background();
     @include mat.all-component-themes($light-theme);
 
     .mdc-button--outlined {
